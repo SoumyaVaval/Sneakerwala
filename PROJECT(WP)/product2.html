@@ -1,0 +1,528 @@
+<html>
+
+<head>
+    <title>Niki Hawai Jorden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="sw.png" />
+    <meta charset="utf-8">
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .nav {
+        display: flex;
+        background: #72e400;
+        align-items: center;
+    }
+
+    .sneakerwala {
+        margin-left: 20px;
+        margin-right: auto;
+        font-family: 'Libre Barcode 39 Extended Text', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 120px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+
+    .cart {
+        margin-right: 20px;
+        font-family: Righteous;
+        font-size: 35px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .cart:hover {
+        color: rgb(44, 44, 44);
+    }
+
+    .allShoes{
+        font-family:sans-serif;
+        padding:10px;
+        padding-bottom:0px;
+        font-size: 30px;
+        margin: 30px;
+        margin-bottom:0px
+    }
+
+    .showingProducts{
+        font-family:sans-serif;
+        padding:10px;
+        padding-top:0px;
+        font-size: 20px;
+        margin-left: 30px;
+        color:rgb(151, 151, 151);
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+    }
+
+    .iconAlign {
+        text-align: center;
+        padding: 10px;
+        background: #72e400;
+        padding-bottom: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        margin-top: 0px;
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100%;
+        margin-bottom:20px;
+    }
+
+    .navContent {
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+    .nav_a {
+        color: white;
+        margin-left:20px;
+    }
+
+    .nav_a:hover {
+        color: #72e400;
+    }
+
+    .top {
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        outline: none;
+        width: 100%;
+        border: none;
+        margin-top: 20px;
+        border-radius:0px
+    }
+    .top:hover{
+        background: rgb(44, 44, 44);
+    }
+
+    .info {
+        background: #72e400;
+    }
+
+    input {
+        font-size: 14px;
+        height: 20px;
+        width: auto;
+        color: #696e79;
+        box-sizing: content-box;
+        padding: 10px;
+        margin-left: 60px;
+        border: 1px solid #f5f5f6;
+        border-radius: 50px 0px 0px 50px;
+        outline: none;
+    }
+
+    .go {
+        height: 20px;
+        margin-right: 60px;
+        border: none;
+        box-sizing: content-box;
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        font-family: sans-serif;
+        outline: none;
+        border-radius: 0px 50px 50px 0px;
+        padding: 10px;
+    }
+
+    .go:hover {
+        background: rgb(44, 44, 44);
+    }
+
+    .footer {
+        width: 170px;
+        list-style-type: none;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        font-family: sans-serif;
+    }
+
+    .connect {
+        background: #72e400;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 10px;
+    }
+    s{
+        font-size:20px;
+        color:rgb(151, 151, 151);
+
+    }
+    .stock{
+        font-size:20px;
+        color:red;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+    }
+    .nav3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    form{
+        display: flex;
+        align-items: center;
+        margin-top:20px;
+    }
+    .productpage1{
+        width:50%;
+    }
+
+    .productpage{
+        padding:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p1_1{
+        height:500px;
+        width:500px;
+        margin: 20px;
+        margin-bottom:0px;
+        border-radius: 50px;
+    }
+
+    .p1_2{
+        height:100px;
+        width:100px;
+        margin: 10px;
+        border-radius: 20px;
+        transition: 0.2s ease;
+    }
+
+    .p1_2:hover{
+        opacity: 0.3;
+    }
+
+    .p1_3{
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        transition: 0.2s ease;
+    }
+
+    .p1_3:hover{
+        opacity: 0.3;
+    }
+
+    .minipro{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+    p{
+        font-family: sans-serif;
+    }
+    .final{
+        display: flex;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:left;
+        background-color: rgb(238, 238, 238);
+        padding:80px;
+    }
+
+    .abibas{
+        font-size:45px;
+        font-weight:bold;
+        margin-bottom:0px
+    }
+
+    .size{
+        list-style:none;
+        display: flex;
+        text-align: center;
+        padding:0px;
+        font-family: sans-serif;
+        margin:0px;
+    }
+
+    .sizenm{
+        margin: 10px;
+        margin-top:0px;
+    }
+
+    .button{
+        font-weight: bold;
+        color: white;
+        background:rgb(0, 0, 0);
+        border-radius: 7px;
+        padding:10px;
+        border: none;
+        font-size: x-large;
+        outline: none;
+        margin:10px;
+    }
+
+    .button:hover{
+        background: rgb(44, 44, 44);
+    }
+
+    .buttons{
+        padding:30px;
+    }
+
+    .sizebutt{
+        font-weight: bold;
+        color: white;
+        background:rgb(0, 0, 0);
+        border-radius: 7px;
+        border: none;
+        font-size: 10px;
+        outline: none;
+        margin:10px;
+        height:30px;
+        width:30px;
+        
+    }
+
+    .sizebutt:hover{
+        background:white;
+        color: black;
+    }
+
+    .sizebutt:focus{
+        background:white;
+        color: black;
+    }
+
+    .price{
+        font-size: 30px;
+    }
+
+</style>
+
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function outOfStock() {
+        alert("this product is currently out of stock")
+    }
+
+    function buynow() {
+            alert("Thankyou for shopping!")
+        }
+
+    function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("p1_1");
+            var dots = document.getElementsByClassName("p1_2");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " opacity-off";
+        }
+
+</script>
+
+<body>
+    <div class="nav">
+        <div class="sneakerwala">
+            <a href="HTMLPage1.html">SNEAKERWALA</a>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <div>
+                <input type="text" name="q" placeholder="search products">
+            </div>
+            <div>
+                <button class="go" type="submit" value="gsearch">GO</button>
+            </div>
+        </form>
+        <div>
+            <a class="cart" href="cart.html">cart</a> 
+        </div>
+    </div>
+    <div class="nav2">
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage1.html">home</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="productL.html">all shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="someShoes.html">some shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="aboutUs.html">about us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage2.html">contact us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="login1.php">login</a>
+        </div>
+    </div>
+    <div class="final">
+        <div class="productpage1">
+            <div class="productpage">
+                <img class="p1_1" src="p2_1.jpg">
+                <img class="p1_1" src="p2_3.jpg" style="display:none">
+                <img class="p1_1" src="p2_2.jpg" style="display:none">
+                <div class="minipro">
+                    <img class="p1_2 opacity hover-opacity-off" src="p2_1.jpg" onclick="currentDiv(1)">
+                    <img class="p1_2 opacity hover-opacity-off" src="p2_3.jpg" onclick="currentDiv(2)">
+                    <img class="p1_2 opacity hover-opacity-off" src="p2_2.jpg" onclick="currentDiv(3)">
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <p class="abibas">
+                Niki Hawai Jorden
+            </p>
+            <p>
+                <i class="price">₹22,399 </i><s>₹28,729</s>
+            </p>
+            <p>
+                <b>Description:</b> white shoes with black stripes indicating an original yet exciting look.
+            </p>
+            <p>
+                <b>Size:</b> 
+            </p>
+            <ul class="size">
+                <li class="sizenm">
+                   <button class="sizebutt">XS</button> 
+                </li>
+                <li class="sizenm">
+                    <button class="sizebutt">S</button> 
+                </li>
+                <li class="sizenm">
+                    <button class="sizebutt">M</button> 
+                </li>
+                <li class="sizenm">
+                    <button class="sizebutt">L</button> 
+                </li>
+                <li class="sizenm">
+                    <button class="sizebutt">XL</button> 
+                </li>
+            </ul>
+            <p class="buttons">
+                <a class="button" href="HTMLPage1.html" onclick="buynow()">Buy Now</a>
+                <a class="button" href="cart.html">Wishlist</a>
+            </p>
+        </div>
+    </div>
+    
+    <div>
+        <button class="top" onclick="topFunction()">Back to top</button>
+    </div>
+    <div class="info">
+        <div class="foot">
+            <ul class="footer">
+                <li>
+                    <b>Mail us:</b>
+                </li>
+                <li>
+                    Mukesh Patel Technolgy Park, Village: Babulde Bank of Tapi River, National Highway No: 3, Shirpur
+                    Dist, Savalade, Maharashtra 425405
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Careers:</b>
+                </li>
+                <li>
+                    Sorry we are currently over our employee limit. There won't be an opening for atleast 2 years. See
+                    you then. Good luck.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>
+                        Policy:
+                    </b>
+                </li>
+                <li>
+                    Our policy is very heretically banal with profound but fastidious pointers. So do not be polemical
+                    about it.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Owners:</b>
+                </li>
+                <li>
+                    Swara Shah
+                </li>
+                <li>
+                    Soumya Vaval
+                </li>
+                <li>
+                    Preksha Cholachgud
+                </li>
+                </ul>
+            <ul class="footer">
+                <li>
+                    © 2021, Sneakerwala.com, Inc. or its affiliates
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="connect">
+        connect with us
+    </div>
+    <div class="iconAlign">
+        <a href="https://www.instagram.com/9GAG/"><img src="instagram-sketched.png" class="icon"></a>
+        <a href="https://www.facebook.com/9gag"><img src="facebook.png" class="icon"></a>
+        <a href="https://twitter.com/9GAG"><img src="twitter.png" class="icon"></a>
+    </div>
+</body>
+
+</html>

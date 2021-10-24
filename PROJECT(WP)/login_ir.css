@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.nav {
+    display: flex;
+    background: #72e400;
+    align-items: center;
+}
+
+.sneakerwala {
+    margin-left: 20px;
+    margin-right: auto;
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 120px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.cart {
+    margin-right: 20px;
+    font-family: Righteous;
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+}
+
+.cart:hover {
+    color: rgb(44, 44, 44);
+}
+
+.allShoes{
+    font-family:sans-serif;
+    padding:10px;
+    padding-bottom:0px;
+    font-size: 30px;
+    margin: 30px;
+    margin-bottom:0px
+}
+
+.showingProducts{
+    font-family:sans-serif;
+    padding:10px;
+    padding-top:0px;
+    font-size: 20px;
+    margin-left: 30px;
+    color:rgb(151, 151, 151);
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.iconAlign {
+    text-align: center;
+    padding: 10px;
+    background: #72e400;
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    margin-top: 0px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom:20px;
+}
+
+.navContent {
+    margin-left: 50px;
+    margin-right: 50px
+}
+
+.nav_a {
+    color: white;
+    margin-left:20px;
+}
+
+.nav_a:hover {
+    color: #72e400;
+}
+
+.top {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    border-radius:0px
+}
+.top:hover{
+    background: rgb(44, 44, 44);
+}
+
+.info {
+    background: #72e400;
+}
+
+.gog {
+    font-size: 14px;
+    height: 20px;
+    width: auto;
+    color: #696e79;
+    box-sizing: content-box;
+    padding: 10px;
+    margin-left: 60px;
+    border: 1px solid #f5f5f6;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+}
+
+.go {
+    height: 20px;
+    margin-right: 60px;
+    border: none;
+    box-sizing: content-box;
+    font-weight: bold;
+    background: #000000;
+    color: white;
+    font-family: sans-serif;
+    outline: none;
+    border-radius: 0px 50px 50px 0px;
+    padding: 10px;
+}
+
+.go:hover {
+    background: rgb(44, 44, 44);
+}
+
+.footer {
+    width: 170px;
+    list-style-type: none;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.connect {
+    background: #72e400;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+s{
+    font-size:20px;
+    color:rgb(151, 151, 151);
+
+}
+.stock{
+    font-size:20px;
+    color:red;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+.nav3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+}
+.login{
+    text-align: center;
+
+}
+.login_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:sans-serif;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    height: 50%;
+    margin: 30px;
+    font-size: x-large;
+}
+.login_input{
+    box-sizing: content-box;
+    padding:10px;
+    border-radius:7px;
+    border: solid 2px black;
+    outline: none;
+}
+.button_login{
+    font-weight: bold;
+    color: white;
+    background:rgb(0, 0, 0);
+    border-radius: 7px;
+    padding:10px;
+    border: none;
+    font-size: x-large;
+    outline: none;
+}
+.button_login:hover{
+    background: rgb(44, 44, 44);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="sw.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function thankyoucon(){
+        alert("Thankyou for contacting us");
+    }
+</script>
+
+<body>
+    <div class="nav">
+        <div class="sneakerwala">
+            <a href="HTMLPage1.html">SNEAKERWALA</a>
+        </div>
+        <form class="searchgo" action="https://www.google.com/search" method="GET">
+            <div>
+                <input class="search" type="text" name="q" placeholder="search products">
+            </div>
+            <div>
+                <button class="go" type="submit" value="gsearch">GO</button>
+            </div>
+        </form>
+        <div>
+            <a class="cart" href="cart.html">cart</a>
+        </div>
+    </div>
+    <div class="nav2">
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage1.html">home</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="productL.html">all shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="someShoes.html">some shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="aboutUs.html">about us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage2.html">contact us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="login1.php">login</a>
+        </div>
+    </div>
+	<p class="contact1">Contact Us</p>
+	<div class="contact">
+	<form class="form" action="HTMLPage2.php"  method="POST">
+	   <input class="login_input" type="text" name="name" placeholder="Full name"></input><br><br>
+	   <input class="login_input" type="text" name="mail" placeholder="Your Email"></input><br><br>
+	   <input class="login_input" type="text" name="subject" placeholder="Enter Subject"></input>
+       <br><br>
+	   <textarea class="login_input" name="message" placeholder="Message"></textarea>
+       <br><br>
+	   <button class="send" type="submit" onclick="thankyoucon()" name="submit">send mail</button>
+
+	</form>
+	</div>
+
+    <div>
+        <button class="top" onclick="topFunction()">Back to top</button>
+    </div>
+    <div class="info">
+        <div class="foot">
+            <ul class="footer">
+                <li>
+                    <b>Mail us:</b>
+                </li>
+                <li>
+                    Mukesh Patel Technolgy Park, Village: Babulde Bank of Tapi River, National Highway No: 3, Shirpur
+                    Dist, Savalade, Maharashtra 425405
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Careers:</b>
+                </li>
+                <li>
+                    Sorry we are currently over our employee limit. There won't be an opening for atleast 2 years. See
+                    you then. Good luck.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>
+                        Policy:
+                    </b>
+                </li>
+                <li>
+                    Our policy is very heretically banal with profound but fastidious pointers. So do not be polemical
+                    about it.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Owners:</b>
+                </li>
+                <li>
+                    Swara Shah
+                </li>
+                <li>
+                    Soumya Vaval
+                </li>
+                <li>
+                    Preksha Cholachgud
+                </li>
+                </ul>
+            <ul class="footer">
+                <li>
+                    © 2021, Sneakerwala.com, Inc. or its affiliates
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="connect">
+        connect with us
+    </div>
+    <div class="iconAlign">
+        <a href="https://www.instagram.com/9GAG/"><img src="instagram-sketched.png" class="icon"></a>
+        <a href="https://www.facebook.com/9gag"><img src="facebook.png" class="icon"></a>
+        <a href="https://twitter.com/9GAG"><img src="twitter.png" class="icon"></a>
+    </div>
+</body>
+    
+</html>

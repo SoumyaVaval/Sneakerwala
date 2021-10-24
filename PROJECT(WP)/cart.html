@@ -1,0 +1,563 @@
+<html>
+
+<head>
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="sw.png" />
+    <meta charset="utf-8">
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .nav {
+        display: flex;
+        background: #72e400;
+        align-items: center;
+    }
+
+    .sneakerwala {
+        margin-left: 20px;
+        margin-right: auto;
+        font-family: 'Libre Barcode 39 Extended Text', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 120px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+
+    .cart {
+        margin-right: 20px;
+        font-family: Righteous;
+        font-size: 35px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .cart:hover {
+        color: rgb(44, 44, 44);
+    }
+
+    .allShoes {
+        font-family: sans-serif;
+        padding: 10px;
+        padding-bottom: 0px;
+        font-size: 30px;
+        margin: 30px;
+        margin-bottom: 0px
+    }
+
+    .showingProducts {
+        font-family: sans-serif;
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 20px;
+        margin-left: 30px;
+        color: rgb(151, 151, 151);
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+    }
+
+    .iconAlign {
+        text-align: center;
+        padding: 10px;
+        background: #72e400;
+        padding-bottom: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        margin-top: 0px;
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navContent {
+        margin-left: 50px;
+        margin-right: 50px
+    }
+
+    .nav_a {
+        color: white;
+        margin-left: 20px;
+    }
+
+    .nav_a:hover {
+        color: #72e400;
+    }
+
+    .top {
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        outline: none;
+        width: 100%;
+        border: none;
+        margin-top: 20px;
+        border-radius: 0px
+    }
+
+    .top:hover {
+        background: rgb(44, 44, 44);
+    }
+
+    .info {
+        background: #72e400;
+    }
+
+    input {
+        font-size: 14px;
+        height: 20px;
+        width: auto;
+        color: #696e79;
+        box-sizing: content-box;
+        padding: 10px;
+        margin-left: 60px;
+        border: 1px solid #f5f5f6;
+        border-radius: 50px 0px 0px 50px;
+        outline: none;
+    }
+
+    .go {
+        height: 20px;
+        margin-right: 60px;
+        border: none;
+        box-sizing: content-box;
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        font-family: sans-serif;
+        outline: none;
+        border-radius: 0px 50px 50px 0px;
+        padding: 10px;
+    }
+
+    .go:hover {
+        background: rgb(44, 44, 44);
+    }
+
+    .footer {
+        width: 170px;
+        list-style-type: none;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        font-family: sans-serif;
+    }
+
+    .connect {
+        background: #72e400;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 10px;
+    }
+
+    s {
+        font-size: 20px;
+        color: rgb(151, 151, 151);
+
+    }
+
+    .stock {
+        font-size: 20px;
+        color: red;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    form {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .shop-item-image{
+        height: 300px;
+        width: 300px;
+        margin-right: 30px;
+    }
+
+    .shop-item{
+        display: flex;
+        align-items: center;
+        background-color: rgb(238, 238, 238);
+        padding: 30px;
+        margin: 30px;
+    }
+
+    .container-content-section{
+        font-family: sans-serif;
+
+    }
+
+    .shop-item-title{
+        font-weight: bold;
+        font-size:30px;
+    }
+
+    .section-header{
+        font-weight:bold;
+        font-size:30px;
+        margin: 30px;
+    }
+
+    .shop-item-price{
+        font-size:30px;
+    }
+
+    .shop-item-button{
+        font-weight: bold;
+        color: white;
+        background:rgb(0, 0, 0);
+        border-radius: 7px;
+        padding:10px;
+        border: none;
+        font-size: x-large;
+        outline: none;
+    }
+
+    .shop-item-button:hover{
+        background: rgb(44, 44, 44);
+    }
+
+    .cart-total{
+        margin-left:30px;
+        font-size:25px;
+    }
+
+    .btn-purchase{
+        font-weight: bold;
+        color: white;
+        background:rgb(0, 0, 0);
+        border-radius: 7px;
+        padding:10px;
+        border: none;
+        font-size: x-large;
+        outline: none;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .btn-purchase:hover{
+        background: rgb(44, 44, 44);
+    }
+
+    .btn-danger{
+        font-weight: bold;
+        color: white;
+        background:rgb(255, 0, 0);
+        border-radius: 7px;
+        padding:7px;
+        border: none;
+        font-size: large;
+        outline: none;
+        margin-top: 10px;
+    }
+
+    .btn-danger:hover{
+        background:rgb(116, 0, 0);
+    }
+
+    .cart-column{
+        display:flex;
+        background-color: rgb(238, 238, 238);
+        margin: 30px;
+        padding: 30px;
+        font-size:20px;
+        align-items: center;
+    }
+
+    .cart-quantity-input{
+        border-radius: 0px;
+        width: 50px;
+        margin: 0px;
+        margin-top: 5px;
+    }
+
+    .cart-item-title{
+        font-weight: bold;
+    }
+
+    .cart-item-image{
+        margin-right:30px;
+    }
+
+    .cart-price-purchase{
+        margin-top:20px;
+    }
+
+</style>
+
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+    }
+
+}
+
+function purchaseClicked() {
+    alert('Thank you for your purchase')
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+}
+
+function quantityChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+}
+
+function addToCartClicked(event) {
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+    addItemToCart(title, price, imageSrc)
+    updateCartTotal()
+}
+
+function addItemToCart(title, price, imageSrc) {
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == title) {
+            alert('This item is already added to the cart')
+            return
+        }
+    }
+    var cartRowContents = `
+        <div class="cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="150" height="150">
+            <div class="purchasedes">
+                <span class="cart-item-title">${title}</span><br>
+                <span class="cart-price-purchase"><i>${price}</i></span><br>      
+                <input class="cart-quantity-input" type="number" value="1">
+                <br>
+                <button class="btn-danger" type="button">remove</button>
+            </div>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+
+
+</script>
+
+<body>
+    <div class="nav">
+        <div class="sneakerwala">
+            <a href="HTMLPage1.html">SNEAKERWALA</a>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <div>
+                <input type="text" name="q" placeholder="search products">
+            </div>
+            <div>
+                <button class="go" type="submit" value="gsearch">GO</button>
+            </div>
+        </form>
+        <div>
+            <a class="cart" href="cart.html">cart</a>
+        </div>
+    </div>
+    <div class="nav2">
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage1.html">home</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="productL.html">all shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="someShoes.html">some shoes</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="aboutUs.html">about us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="HTMLPage2.html">contact us</a>
+        </div>
+        <div class="navContent">
+            <a class="nav_a" href="login1.php">login</a>
+        </div>
+    </div>
+
+    <section class="container-content-section">
+        <h2 class="section-header">Wishlist</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="p1_1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-title"> Abibas nio</span><br><br>
+                    <span class="shop-item-price"><i>₹10,999</i> </span><s>₹28,729</s>
+                    <br>
+                    <div class="stock">
+                        only 2 left in stock
+                    </div>
+                    <br>
+                    <button class="shop-item-button" type="button" onclick="HTMLPage1.html">BUY</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="p2_1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Niki Hawai jorden</span><br><br>
+                    <span class="shop-item-price"><i>₹22,399</i>  </span> <s>₹28,729</s>
+                    <br>
+                    <div class="stock">
+                        only 1 left in stock 
+                    </div>
+                    <br>
+                    <button class="shop-item-button" type="button">BUY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-items">
+        </div>
+        <a class="btn-purchase" onclick="purchaseClicked()" href="HTMLPage1.html" type="button">PURCHASE</a>
+    </section>
+
+    <div>
+        <button class="top" onclick="topFunction()">Back to top</button>
+    </div>
+    <div class="info">
+        <div class="foot">
+            <ul class="footer">
+                <li>
+                    <b>Mail us:</b>
+                </li>
+                <li>
+                    Mukesh Patel Technolgy Park, Village: Babulde Bank of Tapi River, National Highway No: 3, Shirpur
+                    Dist, Savalade, Maharashtra 425405
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Careers:</b>
+                </li>
+                <li>
+                    Sorry we are currently over our employee limit. There won't be an opening for atleast 2 years. See
+                    you then. Good luck.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>
+                        Policy:
+                    </b>
+                </li>
+                <li>
+                    Our policy is very heretically banal with profound but fastidious pointers. So do not be polemical
+                    about it.
+                </li>
+            </ul>
+            <ul class="footer">
+                <li>
+                    <b>Owners:</b>
+                </li>
+                <li>
+                    Swara Shah
+                </li>
+                <li>
+                    Soumya Vaval
+                </li>
+                <li>
+                    Preksha Cholachgud
+                </li>
+                </ul>
+            <ul class="footer">
+                <li>
+                    © 2021, Sneakerwala.com, Inc. or its affiliates
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="connect">
+        connect with us
+    </div>
+    <div class="iconAlign">
+        <a href="https://www.instagram.com/9GAG/"><img src="instagram-sketched.png" class="icon"></a>
+        <a href="https://www.facebook.com/9gag"><img src="facebook.png" class="icon"></a>
+        <a href="https://twitter.com/9GAG"><img src="twitter.png" class="icon"></a>
+    </div>
+</body>
+
+</html>
